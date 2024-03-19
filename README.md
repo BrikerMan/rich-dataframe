@@ -1,18 +1,29 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 [![License: Apache-2.0](https://img.shields.io/badge/Apache-2.0%20v3-blue.svg)](https://github.com/khuyentran1401/rich-dataframe/blob/master/LICENSE)
 
-# Rich DataFrame
+# Rich DataFrame 2
+
+## What is new
+
+Updated dependencies so that this amazing project by [khuyentran1401](https://github.com/khuyentran1401/rich-dataframe) can install on modern python3 env. Release on pypi using name `rich-dataframe2`
+
+## Original Readme
+
 
 Create animated and pretty Pandas Dataframe or Pandas Series, as shown below:
 
 ![image](https://github.com/khuyentran1401/rich-dataframe/blob/master/images/prettify_table.gif?raw=True)
 
 # Installation
+
 ```bash
-pip install rich-dataframe
+pip install rich-dataframe2
 ```
+
 # Usage
+
 ## Minimal example
+
 ```python
 from sklearn.datasets import fetch_openml
 from rich_dataframe import prettify
@@ -24,14 +35,18 @@ table = prettify(speed_dating)
 ```
 
 If you want to pass a non-dataframe object, `rich_dataframe` got it covered too!
+
 ```python 
 from rich_dataframe import prettify
 
 var = {'a': 1, 'b': 3}
 prettify(var)
 ```
+
 ![image](https://github.com/khuyentran1401/rich-dataframe/blob/master/images/non_dataframe.png?raw=True)
+
 ## Parameters
+
 * **df: pd.DataFrame**
 The data you want to prettify
 * **row_limit : int, optional**
